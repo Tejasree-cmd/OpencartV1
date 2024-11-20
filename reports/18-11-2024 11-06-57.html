@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">18-11-2024 11-06-57.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">18-11-2024 11-06-57.html</h1>
+    <p>Report generated on 18-Nov-2024 at 11:07:26 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">1 test took 00:00:25.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">1 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" disabled/>
+            <span class="passed">0 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.1&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.22631-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.3&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}}, &#34;tests&#34;: {&#34;testCases/test_001_login.py::Test_Login::test_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;testCases/test_001_login.py::Test_Login::test_login&#34;, &#34;duration&#34;: &#34;00:00:25&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;testCases/test_001_login.py::Test_Login::test_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:25&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;testCases.test_001_login.Test_Login object at 0x000001FC99C6CC80&amp;gt;, setup = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;fa18ea1734b4c75af3e5e08a26485255&amp;quot;)&amp;gt;\n\n    @pytest.mark.sanity\n    def test_login(self,setup):\n        self.logger.info(&amp;quot;***** Starting test_002_login *******&amp;quot;)\n        self.driver = setup\n        self.driver.get(self.baseurl)\n        self.driver.maximize_window()\n    \n        self.hp = LoginPage(self.driver)\n        self.hp.setEmail(self.user)\n        self.hp.setPassword(self.password)\n        self.hp.clickLogin()\n    \n        self.targgetpage= self.hp.isMyAccountPageExists()\n        if self.targgetpage == True:\n            assert True\n    \n        else:\n            self.loc1 = os.path.abspath(os.curdir)\n            print(self.loc1)\n            self.loc2 = os.path.join(self.loc1, &amp;quot;screenshots&amp;quot;)\n            self.loc = os.path.join(self.loc2, &amp;quot;test_account_Login.png&amp;quot;)\n            print(self.loc)\n            self.driver.save_screenshot(self.loc)\n    \n&amp;gt;           assert False\nE           assert False\n\ntestCases\\test_001_login.py:41: AssertionError\n\n------------------------------ Captured log setup ------------------------------\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:101 Selenium Manager binary found at: C:\\Users\\sai\\PycharmProjects\\OpencartV1\\.venv\\Lib\\site-packages\\selenium\\webdriver\\common\\windows\\selenium-manager.exe\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:114 Executing process: C:\\Users\\sai\\PycharmProjects\\OpencartV1\\.venv\\Lib\\site-packages\\selenium\\webdriver\\common\\windows\\selenium-manager.exe --browser chrome --debug --language-binding python --output json\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chromedriver not found in PATH\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chrome detected at C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Running command: wmic datafile where name=&amp;#x27;C:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe&amp;#x27; get Version /value\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Output: &amp;quot;\\r\\r\\n\\r\\r\\nVersion=131.0.6778.69\\r\\r\\n\\r\\r\\n\\r\\r\\n\\r&amp;quot;\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Detected browser: chrome 131.0.6778.69\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Required driver: chromedriver 131.0.6778.69\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chromedriver 131.0.6778.69 already in the cache\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Driver path: C:\\Users\\sai\\.cache\\selenium\\chromedriver\\win64\\131.0.6778.69\\chromedriver.exe\nDEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Browser path: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nDEBUG    selenium.webdriver.common.service:service.py:225 Started executable: `C:\\Users\\sai\\.cache\\selenium\\chromedriver\\win64\\131.0.6778.69\\chromedriver.exe` in a child process with pid: 3796 using 0 to output -3\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session {&amp;#x27;capabilities&amp;#x27;: {&amp;#x27;firstMatch&amp;#x27;: [{}], &amp;#x27;alwaysMatch&amp;#x27;: {&amp;#x27;browserName&amp;#x27;: &amp;#x27;chrome&amp;#x27;, &amp;#x27;pageLoadStrategy&amp;#x27;: &amp;lt;PageLoadStrategy.normal: &amp;#x27;normal&amp;#x27;&amp;gt;, &amp;#x27;browserVersion&amp;#x27;: None, &amp;#x27;goog:chromeOptions&amp;#x27;: {&amp;#x27;extensions&amp;#x27;: [], &amp;#x27;binary&amp;#x27;: &amp;#x27;C:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe&amp;#x27;, &amp;#x27;args&amp;#x27;: []}}}}\nDEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:61439\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:{&amp;quot;capabilities&amp;quot;:{&amp;quot;acceptInsecureCerts&amp;quot;:false,&amp;quot;browserName&amp;quot;:&amp;quot;chrome&amp;quot;,&amp;quot;browserVersion&amp;quot;:&amp;quot;131.0.6778.69&amp;quot;,&amp;quot;chrome&amp;quot;:{&amp;quot;chromedriverVersion&amp;quot;:&amp;quot;131.0.6778.69 (77e2244bbcda3ab9362d5b8aeeb006a86a6d4832-refs/branch-heads/6778@{#2141})&amp;quot;,&amp;quot;userDataDir&amp;quot;:&amp;quot;C:\\\\Users\\\\sai\\\\AppData\\\\Local\\\\Temp\\\\scoped_dir3796_439354104&amp;quot;},&amp;quot;fedcm:accounts&amp;quot;:true,&amp;quot;goog:chromeOptions&amp;quot;:{&amp;quot;debuggerAddress&amp;quot;:&amp;quot;localhost:61443&amp;quot;},&amp;quot;networkConnectionEnabled&amp;quot;:false,&amp;quot;pageLoadStrategy&amp;quot;:&amp;quot;normal&amp;quot;,&amp;quot;platformName&amp;quot;:&amp;quot;windows&amp;quot;,&amp;quot;proxy&amp;quot;:{},&amp;quot;setWindowRect&amp;quot;:true,&amp;quot;strictFileInteractability&amp;quot;:false,&amp;quot;timeouts&amp;quot;:{&amp;quot;implicit&amp;quot;:0,&amp;quot;pageLoad&amp;quot;:300000,&amp;quot;script&amp;quot;:30000},&amp;quot;unhandledPromptBehavior&amp;quot;:&amp;quot;dismiss and notify&amp;quot;,&amp;quot;webauthn:extension:credBlob&amp;quot;:true,&amp;quot;webauthn:extension:largeBlob&amp;quot;:true,&amp;quot;webauthn:extension:minPinLength&amp;quot;:true,&amp;quot;webauthn:extension:prf&amp;quot;:true,&amp;quot;webauthn:virtualAuthenticators&amp;quot;:true},&amp;quot;sessionId&amp;quot;:&amp;quot;fa18ea1734b4c75af3e5e08a26485255&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;878&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\n\n------------------------------ Captured log call -------------------------------\nINFO     utilities.customLogger:test_001_login.py:19 ***** Starting test_002_login *******\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/url {&amp;#x27;url&amp;#x27;: &amp;#x27;https://demo.opencart.com/en-gb?route=account/login&amp;#x27;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/url HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:null} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;14&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/window/maximize {}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/window/maximize HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:{&amp;quot;height&amp;quot;:832,&amp;quot;width&amp;quot;:1552,&amp;quot;x&amp;quot;:-8,&amp;quot;y&amp;quot;:-8}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;51&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element {&amp;#x27;using&amp;#x27;: &amp;#x27;xpath&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;quot;//input[@id=&amp;#x27;input-email&amp;#x27;]&amp;quot;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:{&amp;quot;element-6066-11e4-a52e-4f735466cecf&amp;quot;:&amp;quot;f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.3&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;125&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.3/value {&amp;#x27;text&amp;#x27;: &amp;#x27;tabxyzabc123@gmail.com&amp;#x27;, &amp;#x27;value&amp;#x27;: [&amp;#x27;t&amp;#x27;, &amp;#x27;a&amp;#x27;, &amp;#x27;b&amp;#x27;, &amp;#x27;x&amp;#x27;, &amp;#x27;y&amp;#x27;, &amp;#x27;z&amp;#x27;, &amp;#x27;a&amp;#x27;, &amp;#x27;b&amp;#x27;, &amp;#x27;c&amp;#x27;, &amp;#x27;1&amp;#x27;, &amp;#x27;2&amp;#x27;, &amp;#x27;3&amp;#x27;, &amp;#x27;@&amp;#x27;, &amp;#x27;g&amp;#x27;, &amp;#x27;m&amp;#x27;, &amp;#x27;a&amp;#x27;, &amp;#x27;i&amp;#x27;, &amp;#x27;l&amp;#x27;, &amp;#x27;.&amp;#x27;, &amp;#x27;c&amp;#x27;, &amp;#x27;o&amp;#x27;, &amp;#x27;m&amp;#x27;]}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.3/value HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:null} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;14&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element {&amp;#x27;using&amp;#x27;: &amp;#x27;xpath&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;quot;//input[@id=&amp;#x27;input-password&amp;#x27;]&amp;quot;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:{&amp;quot;element-6066-11e4-a52e-4f735466cecf&amp;quot;:&amp;quot;f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.5&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;125&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.5/value {&amp;#x27;text&amp;#x27;: &amp;#x27;Saiviswa@2811&amp;#x27;, &amp;#x27;value&amp;#x27;: [&amp;#x27;S&amp;#x27;, &amp;#x27;a&amp;#x27;, &amp;#x27;i&amp;#x27;, &amp;#x27;v&amp;#x27;, &amp;#x27;i&amp;#x27;, &amp;#x27;s&amp;#x27;, &amp;#x27;w&amp;#x27;, &amp;#x27;a&amp;#x27;, &amp;#x27;@&amp;#x27;, &amp;#x27;2&amp;#x27;, &amp;#x27;8&amp;#x27;, &amp;#x27;1&amp;#x27;, &amp;#x27;1&amp;#x27;]}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.5/value HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:null} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;14&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element {&amp;#x27;using&amp;#x27;: &amp;#x27;xpath&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;quot;//*[@id=&amp;#x27;form-login&amp;#x27;]/div[3]/button&amp;quot;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:{&amp;quot;element-6066-11e4-a52e-4f735466cecf&amp;quot;:&amp;quot;f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;126&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 GET http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10/enabled {}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;GET /session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10/enabled HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:true} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;14&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element {&amp;#x27;using&amp;#x27;: &amp;#x27;xpath&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;quot;//*[@id=&amp;#x27;form-login&amp;#x27;]/div[3]/button&amp;quot;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:{&amp;quot;element-6066-11e4-a52e-4f735466cecf&amp;quot;:&amp;quot;f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;126&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 GET http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10/text {}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;GET /session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10/text HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:&amp;quot;Login&amp;quot;} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;17&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element {&amp;#x27;using&amp;#x27;: &amp;#x27;xpath&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;quot;//*[@id=&amp;#x27;form-login&amp;#x27;]/div[3]/button&amp;quot;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:{&amp;quot;element-6066-11e4-a52e-4f735466cecf&amp;quot;:&amp;quot;f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;126&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10/click {}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element/f.BF240F5A2CFA863D5432A1CCFF563E5E.d.1F0C1E01975B8361B3F80F47387815F1.e.10/click HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:null} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;14&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element {&amp;#x27;using&amp;#x27;: &amp;#x27;xpath&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;quot;//*[@id=&amp;#x27;form-login&amp;#x27;]/div[3]/button&amp;quot;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element HTTP/11&amp;quot; 404 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=404 | data={&amp;quot;value&amp;quot;:{&amp;quot;error&amp;quot;:&amp;quot;no such element&amp;quot;,&amp;quot;message&amp;quot;:&amp;quot;no such element: Unable to locate element: {\\&amp;quot;method\\&amp;quot;:\\&amp;quot;xpath\\&amp;quot;,\\&amp;quot;selector\\&amp;quot;:\\&amp;quot;//*[@id=&amp;#x27;form-login&amp;#x27;]/div[3]/button\\&amp;quot;}\\n  (Session info: chrome=131.0.6778.69)&amp;quot;,&amp;quot;stacktrace&amp;quot;:&amp;quot;\\tGetHandleVerifier [0x00007FF6A91A2775+28773]\\n\\t(No symbol) [0x00007FF6A910AFB0]\\n\\t(No symbol) [0x00007FF6A8FA552A]\\n\\t(No symbol) [0x00007FF6A8FF8EAE]\\n\\t(No symbol) [0x00007FF6A8FF919C]\\n\\t(No symbol) [0x00007FF6A90423F7]\\n\\t(No symbol) [0x00007FF6A901EFDF]\\n\\t(No symbol) [0x00007FF6A903F1A4]\\n\\t(No symbol) [0x00007FF6A901ED43]\\n\\t(No symbol) [0x00007FF6A8FEA548]\\n\\t(No symbol) [0x00007FF6A8FEB6B1]\\n\\tGetHandleVerifier [0x00007FF6A94CF45D+3358029]\\n\\tGetHandleVerifier [0x00007FF6A94E430D+3443709]\\n\\tGetHandleVerifier [0x00007FF6A94D83FD+3394797]\\n\\tGetHandleVerifier [0x00007FF6A926929B+842635]\\n\\t(No symbol) [0x00007FF6A911654F]\\n\\t(No symbol) [0x00007FF6A9111FA4]\\n\\t(No symbol) [0x00007FF6A911213D]\\n\\t(No symbol) [0x00007FF6A9101629]\\n\\tBaseThreadInitThunk [0x00007FFE0BEB257D+29]\\n\\tRtlUserThreadStart [0x00007FFE0D28AF08+40]\\n&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;1068&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 POST http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/element {&amp;#x27;using&amp;#x27;: &amp;#x27;xpath&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;quot;//h2[normalize-space()=&amp;#x27;My Account&amp;#x27;]&amp;quot;}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;POST /session/fa18ea1734b4c75af3e5e08a26485255/element HTTP/11&amp;quot; 404 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=404 | data={&amp;quot;value&amp;quot;:{&amp;quot;error&amp;quot;:&amp;quot;no such element&amp;quot;,&amp;quot;message&amp;quot;:&amp;quot;no such element: Unable to locate element: {\\&amp;quot;method\\&amp;quot;:\\&amp;quot;xpath\\&amp;quot;,\\&amp;quot;selector\\&amp;quot;:\\&amp;quot;//h2[normalize-space()=&amp;#x27;My Account&amp;#x27;]\\&amp;quot;}\\n  (Session info: chrome=131.0.6778.69)&amp;quot;,&amp;quot;stacktrace&amp;quot;:&amp;quot;\\tGetHandleVerifier [0x00007FF6A91A2775+28773]\\n\\t(No symbol) [0x00007FF6A910AFB0]\\n\\t(No symbol) [0x00007FF6A8FA552A]\\n\\t(No symbol) [0x00007FF6A8FF8EAE]\\n\\t(No symbol) [0x00007FF6A8FF919C]\\n\\t(No symbol) [0x00007FF6A90423F7]\\n\\t(No symbol) [0x00007FF6A901EFDF]\\n\\t(No symbol) [0x00007FF6A903F1A4]\\n\\t(No symbol) [0x00007FF6A901ED43]\\n\\t(No symbol) [0x00007FF6A8FEA548]\\n\\t(No symbol) [0x00007FF6A8FEB6B1]\\n\\tGetHandleVerifier [0x00007FF6A94CF45D+3358029]\\n\\tGetHandleVerifier [0x00007FF6A94E430D+3443709]\\n\\tGetHandleVerifier [0x00007FF6A94D83FD+3394797]\\n\\tGetHandleVerifier [0x00007FF6A926929B+842635]\\n\\t(No symbol) [0x00007FF6A911654F]\\n\\t(No symbol) [0x00007FF6A9111FA4]\\n\\t(No symbol) [0x00007FF6A911213D]\\n\\t(No symbol) [0x00007FF6A9101629]\\n\\tBaseThreadInitThunk [0x00007FFE0BEB257D+29]\\n\\tRtlUserThreadStart [0x00007FFE0D28AF08+40]\\n&amp;quot;}} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;1069&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:390 GET http://localhost:61439/session/fa18ea1734b4c75af3e5e08a26485255/screenshot {}\nDEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:61439 &amp;quot;GET /session/fa18ea1734b4c75af3e5e08a26485255/screenshot HTTP/11&amp;quot; 200 0\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:423 Remote response: status=200 | data={&amp;quot;value&amp;quot;:&amp;quot;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ABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgD+soNLAAAQp0lEQVQAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAP8/3bsWAAAAABgkL/1KPYVRgAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwENAAAAAAACwENAAAAAAACwENAAAAAMBCQAMAAAAAsBDQAAAAAAAsBDQAAAAAAAsBDQAAAADAQkADAAAAALAQ0AAAAAAALAQ0AAAAAAALAQ0AAAAAwEJAAwAAAACwCPrafdsStuKnAAAAAElFTkSuQmCC&amp;quot;} | headers=HTTPHeaderDict({&amp;#x27;Content-Length&amp;#x27;: &amp;#x27;16728&amp;#x27;, &amp;#x27;Content-Type&amp;#x27;: &amp;#x27;application/json; charset=utf-8&amp;#x27;, &amp;#x27;cache-control&amp;#x27;: &amp;#x27;no-cache&amp;#x27;})\nDEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:452 Finished Request\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;18-11-2024 11-06-57.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
